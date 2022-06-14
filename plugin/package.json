@@ -1,6 +1,6 @@
 {
   "name": "react-native-performance-flipper-expo-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React Native Performance Flipper Plugin Support for Expo Apps",
   "main": "build/withReactNativePerformanceFlipperPlugin.js",
   "types": "build/withReactNativePerformanceFlipperPlugin.d.ts",

@@ -1,6 +1,6 @@
 ## react-native-performance-flipper-expo-plugin
 
-This is a plugin for [react-native-performance-flipper]
+This is a plugin for [react-native-performance-flipper](https://github.com/bamlab/react-native-performance)
 To install react-native-performance for Expo, a few things need to be done in advance.
 
 ## Usage (Quick Guide)

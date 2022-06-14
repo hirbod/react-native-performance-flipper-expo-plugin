@@ -1,0 +1,48 @@
+{
+  "name": "react-native-performance-flipper-expo-plugin",
+  "version": "1.0.0.rc-1",
+  "description": "React Native Performance Flipper Plugin Support for Expo Apps",
+  "main": "build/withReactNativePerformanceFlipperPlugin.js",
+  "types": "build/withReactNativePerformanceFlipperPlugin.d.ts",
+  "sideEffects": false,
+  "scripts": {
+    "build": "expo-module build",
+    "clean": "expo-module clean",
+    "lint": "tslint --project ./tsconfig.json",
+    "test": "expo-module test",
+    "release:before:init": "expo-module prepare; expo-module prepublishOnly",
+    "expo-module": "expo-module"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hirbod/react-native-performance-flipper-expo-plugin.git"
+  },
+  "keywords": [
+    "flipper",
+    "expo",
+    "eas",
+    "react-native-performance",
+    "react native performance",
+    "react-native",
+    "config-plugin"
+  ],
+  "jest": {
+    "preset": "expo-module-scripts"
+  },
+  "author": "Hirbod Mirjavadi <info@nightstomp.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hirbod/react-native-performance-flipper-expo-plugin/issues"
+  },
+  "homepage": "https://github.com/hirbod/react-native-performance-flipper-expo-plugin#readme",
+  "devDependencies": {
+    "@expo/config-types": "^45.0.0",
+    "expo-module-scripts": "^2.0.0",
+    "tslint": "^6.1.3",
+    "typescript": "^4.7.3"
+  },
+  "dependencies": {
+    "@expo/config-plugins": "^4.1.5",
+    "resolve-from": "^5.0.0"
+  }
+}

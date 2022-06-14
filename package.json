@@ -1,0 +1,52 @@
+{
+  "private": true,
+  "version": "1.0.0-rc.1",
+  "name": "react-native-performance-flipper-expo-plugin-root",
+  "workspaces": [
+    "example",
+    "plugin"
+  ],
+  "installConfig": {
+    "hoistingLimits": "workspaces"
+  },
+  "description": "React Native Performance Plugin support for Expo Apps",
+  "scripts": {
+    "husky": "husky",
+    "postinstall": "husky install",
+    "rel": "release-it"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hirbod/react-native-performance-flipper-expo-plugin.git"
+  },
+  "author": "Hirbod Mirjavadi <info@nightstomp.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hirbod/react-native-performance-flipper-expo-plugin/issues"
+  },
+  "homepage": "https://github.com/hirbod/react-native-performance-flipper-expo-plugin#readme",
+  "packageManager": "yarn@3.1.1",
+  "devDependencies": {
+    "@commitlint/cli": "^15.0.0",
+    "@commitlint/config-conventional": "^15.0.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.1.2",
+    "prettier": "^2.5.0",
+    "release-it": "*",
+    "release-it-yarn-workspaces": "^2.0.1"
+  },
+  "release-it": {
+    "plugins": {
+      "release-it-yarn-workspaces": true
+    },
+    "npm": false,
+    "git": {
+      "commitMessage": "chore: Releases version v${version}"
+    },
+    "hooks": {
+      "before:init": [
+        "yarn release:before:init || true"
+      ]
+    }
+  }
+}
